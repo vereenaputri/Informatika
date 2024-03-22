@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js_home.js" defer></script>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Times New Roman, Georgia, Garamond';
+    }
+    
+    /* Style the header */
+    header {
+      background-color: #ffe980;
+      padding: 10px;
+      text-align: center;
+      font-size: 25px;
+      color: black;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column1 {
+            width: 25%;
+            background-color: #fffeab;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ffa256;
+        }
+        .column2 {
+            width: 50%;
+            background-color: #fffeab;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ffa256;
+        }
+        .column3 {
+            width: 25%;
+            background-color: #fffeab;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ffa256;
+        }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px;
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <header>
+        <style>
+            .corner-image {
+                position: absolute;
+                top: 10px; /* Sesuaikan dengan jarak atas */
+                left: 10px; /* Sesuaikan dengan jarak kiri */
+                right: 100px;
+            }
+        </style>
+        <img src="logo running sport centre.png" alt="Gambar Post" style="margin-left:30px;width: 160px; height: 160px;" class="corner-image">
+        <h2>WELCOME TO RUNNING SPORT CENTRE</h2>
+        <style>
+            nav {
+                background-color: #ffce48;
+                padding: 10px;
+                text-align: center;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+        </style>
+        <nav>
+            <ul>
+                <li><a href="Halaman 1_Home.html">Home</a></li>
+                <li><a href="Halaman 2_Profile.html">Profile</a></li>
+                <li><a href="Halaman 3_Berita.html">News</a></li>
+                <li><a href="Halaman Login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="column1">
+            <div class="flex-wrap">
+                <h3>MESSAGE</h3>
+                    <hr style="border-color: #ffe980;">    
+                    <img src="lalisa.png" alt="lalisa" style="float:left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Lalisa</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+                    <img src="rose.jpg" alt="rose" style="float:left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Rose</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+                    <img src="icon group.png" alt="icon group" style="float: left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Lari Pagi</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+                    <img src="jennie.jpg" alt="jennie" style="float:left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Kim Jennie</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+                    <img src="icon group.png" alt="icon group" style="float: left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Info Event Lari</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+                    <img src="junghaein.jpg" alt="junghaein" style="float: left;margin-right:15px;width:30px;height:30px;" class="round-image">
+                    <p>Jung Hae In</p>
+                    <p></p>
+                    <hr style="border-color: #ffe980;">
+            </div>
+        </div>
+        
+        <div class="column2">
+            <style>
+                {
+                    flex-wrap: wrap;
+                    flex: 1;
+                    background-color: #ffffff;
+                    border: 1px solid #ffa256;
+                    padding: 20px;
+                    margin: 10px;
+                }
+            </style>
+            <div class="flex-wrap: wrap;">
+                <form id="myForm">
+                    <input type="text" id="textInput" name="textInput" placeholder="Write a caption..." style="width: 600px;">
+                    <button type="submit">Post</button>
+                    <br>
+                </form>
+
+                    <style>
+                        .round-image {
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    </style>
+                    
+                    <hr style="border-color: #ffe980;">
+                    <img src="jisoo.jpg" alt="Profil Jisoo" style="float:left;width:45px;height:45px;" class="round-image"> 
+                    <h2>Kim Jisoo</h2>
+                    
+                    <img src="lari 1.jpg" alt="Gambar Post" style="width: 600px;">
+                    <p>Run!!</p>
+                    <p style="color: #eba31d;">Published March 13, 2024</p>
+                    <hr style="border-color: #ffe980;">
+
+                    <img src="lari cewe 2.jpeg" alt="Gambar Post 2" style="width: 600px;">
+                    <p>Lari Pagi</p>
+                    <p style="color: #eba31d;">Published March 9, 2024</p>
+                    <hr style="border-color: #ffe980;">
+
+                    <img src="cewe lari 3.jpeg" alt="Gambar Post 3" style="width: 600px;">
+                    <p>&#128516</p>
+                    <p style="color: #eba31d;">Published March 5, 2024</p>
+                    <hr style="border-color: #ffe980;">
+
+                    <img src="lari cewe 3.jpg" alt="Gambar Post" style="width: 600px;">
+                    <p>Huh &#128517;</p>
+                    <p style="color: #eba31d;">Published March 1, 2024</p>
+                    <hr style="border-color: #ffe980;">
+
+                    <img src="lari cewe 4.jpg" alt="Gambar Post" style="width: 600px;">
+                    <p>Good Morning &#129392</p>
+                    <p style="color: #eba31d;">Published February 27, 2024</p>
+                    <hr style="border-color: #ffe980;">
+            </div>
+        </div>
+
+        <div class="column3">
+            <h3>YOUR PROFILE</h3>
+            <img src="jisoo.jpg" alt="Profil Jisoo" style="float:left;margin-right:10px;width:60px;height:60px;" class="round-image">
+            <p style="font-weight: bold;">Kim Jisoo</p>
+            <p>&#x1F483;&#127939;</p>
+            <p>Followers: 35,6 B</p>
+            <p>Notifications: 3,000</p>
+            <p></p>
+            <hr style="border-color: #ffe980;">
+
+            <h3>FAVORITE POST</h3>
+            <img src="jisoo post 1.jpg" alt="jisoo post 1" style="width: 250px;">
+            <img src="icon love.png" alt="icon love" style="display: flex;margin-right:10px;width: 40px;height: 40px;">
+            <p style="display: flex;">10,5 B</p>
+            <hr style="border-color: #ffe980;">
+
+            <img src="jisoo post 2.jpg" alt="jisoo post 2" style="width: 250px;">
+            <img src="icon love.png" alt="icon love" style="margin-right:10px;width: 40px;height: 40px;">
+            <p>10,2 B</p>
+            <hr style="border-color: #ffe980;">
+
+            <img src="jisoo post 3.jpeg" alt="jisoo post 3" style="width: 250px;">
+            <img src="icon love.png" alt="icon love" style="margin-right:10px;width: 40px;height: 40px;">
+            <p>9,7 B</p>
+            <hr style="border-color: #ffe980;">
+
+            <img src="jisoo post 4.jpeg" alt="jisoo post 4" style="width: 250px;">
+            <img src="icon love.png" alt="icon love" style="margin-right:10px;width: 40px;height: 40px;">
+            <p>9,4 B</p>
+            <hr style="border-color: #ffe980;">
+        </div>
+    </div>
+    
+    </body>
+    </html>

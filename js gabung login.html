@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Georgia, Garamond;
+            margin: 0;
+            padding: 0;
+            background-image: url('lintasan lari bg.jpg');
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <img src="logo running sport centre.png" alt="logo" style="height: 100px;">
+        <form onsubmit="return validateForm()" method="POST">
+            <p style="float: left;">Email</p>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+
+            <p style="float: left;">Password</p>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <input type="checkbox" name="rememberme" id="rememberme">
+            <label for="rememberme">Remember me</label>
+
+            <input type="submit" value="Login">
+            
+            <p>Doesn't have an account? <a href="Halaman Register.html">Sign In</a></p>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Contoh validasi sederhana, ganti dengan validasi yang sesuai dengan kebutuhan Anda
+            if (email !== 'example@example.com' || password !== 'password') {
+                alert('Email atau password tidak sesuai.');
+                return false; // Menghentikan pengiriman formulir
+            }
+
+            // Jika validasi berhasil, formulir akan dikirimkan
+            return true;
+        }
+    </script>
+</body>
+</html>
